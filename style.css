@@ -1,0 +1,171 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #292929;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    color: #242424;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: bold;
+}
+
+.banner img {
+    width: 99%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #343b8f;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    background-color: #fff;
+}
+
+.conteudo-principal {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.conteudo-depoimento-cliente,.conteudo-noticia {
+    margin: 20px 0;
+
+}
+
+.conteudo-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.conteudo-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.depoimento-cliente-card,.noticia-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    text-align: center;
+}
+
+.imagem-usuario {
+    width: 5%;
+}
+
+.cliente-texto {
+    margin: 0px 200px 0px 200px;
+}
+
+.noticia-card img {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0 6px 0;
+}
+
+.texto-footer {
+    color: #fff;
+    font-weight: 700;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1092px) {
+
+    .banner img {
+        width: 85%;
+    }
+
+    .cliente-texto {
+        text-align: center;
+        margin: 0 5% 0 5%;
+    }
+
+    .texto-footer {
+        margin: 0 5% 0 5%;
+    }
+}
+
+@media(max-width:500px) {
+
+    header {
+        padding: 0.5em 0;
+        /* Reduz o padding para telas menores */
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        /* Ajusta a margem para um layout vertical */
+    }
+}
